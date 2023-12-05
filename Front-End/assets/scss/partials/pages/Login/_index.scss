@@ -1,0 +1,92 @@
+#login{
+    background-color: $bg-color;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    .login-title{
+        color: $main-color;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    input{
+        background-color: transparent;
+        border-radius: 10px;
+        outline: 0;
+        border: 2px solid #666;
+        padding: 10px 20px;
+        &.username{
+            margin-bottom: 10px;
+        }
+    }
+    span{
+        text-align: right;
+        color: #666;
+        margin-top: 10px;
+        a{
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            color: $main-color;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    p{
+        color: #666;
+    }
+    .integration-button{
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        outline: 0;
+        border: 2px solid #666;
+        background-color: transparent;
+        color: #666;
+        font-weight: 600;
+        position: relative;
+        i{
+            color: #333;
+            font-size: 20px;
+            position: absolute;
+            left: 15px;
+            top: 11px;
+        }
+        &:hover{
+            color: $main-color;
+            i{
+                color: $main-hover-color;
+            }
+        }
+    }
+    .login-submit{
+        width: 50%;
+        align-self: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $main-color;
+        color: $bg-color;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        margin-top: 20px;
+        &:hover{
+            background-color: $main-hover-color;
+        }
+    }
+    .signup{
+        color: #666;
+        align-self: center;
+        margin-top: 10px;
+        a{
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

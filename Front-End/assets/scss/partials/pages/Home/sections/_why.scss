@@ -1,0 +1,59 @@
+#why{
+    background-color: $bg-color;
+    padding: 100px 0;
+    .why-title{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .why-card{
+        background-color: $main-color;
+        border-radius: 25px;
+        padding: 50px 40px;
+        margin-top: 30px;
+        i{
+            font-size: 35px;
+            color: $secondary-color;
+            margin-bottom: 25px;
+        }
+        h4{
+            font-size: 20px;
+            color: $bg-color;
+        }
+        p{
+            color: $bg-color;
+            font-size: 11px;
+        }
+        img{
+            width: 100%;
+        }
+        &_img{
+            height: calc(100% - 30px);
+            padding: 0;
+            overflow: hidden;
+            
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: right;
+            }
+        }
+        &_img-sm{
+            padding: 0;
+            overflow: hidden;
+            max-height: 241px;
+        }
+        &_secondary{
+            background-color: $secondary-color;
+            i{
+                color: $main-color;
+            }
+            h4{
+                color: $main-color;
+            }
+            p{
+                color: $main-color;
+            }
+        }
+    }
+}
